@@ -2,3 +2,40 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.article-images {
+  height: 220px;
+}
+
+.lime {
+  background-color: hsl(136, 65%, 51%);
+}
+
+.light-white {
+  background-color: (0, 0%, 98%)
+}
+
+.light-grey {
+  background-color: hsl(220, 16%, 96%)
+}
+
+.white-bkg {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.text {
+  font-family: 'Public Sans', sans-serif;
+}
+
+.text-white {
+  font-family: 'Public Sans', sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-blue {
+  background-color: hsl(233, 26%, 24%);
+}
+
+.logo-foot-width {
+  width: 90px;
+}
