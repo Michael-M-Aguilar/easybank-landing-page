@@ -1,12 +1,3 @@
-#body {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.article-images {
-  height: 220px;
-}
-
 .lime {
   background-color: hsl(136, 65%, 51%);
 }
@@ -27,9 +18,27 @@
   font-family: 'Public Sans', sans-serif;
 }
 
+.size {
+  font-size: 1.5rem;
+}
+
+.size-m {
+  font-size: 2rem;
+}
+
+.size-l {
+  font-size: 2.5rem;
+}
+
 .text-white {
   font-family: 'Public Sans', sans-serif;
   color: hsl(0, 0%, 100%);
+}
+
+.text-grey {
+  font-family: 'Public Sans', sans-serif;
+  color: hsl(233, 8%, 62%);
+  font-size: 0.9rem
 }
 
 .dark-blue {
