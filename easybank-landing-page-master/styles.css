@@ -1,15 +1,4 @@
-.flex {
-  display: flex;
-}
-
-.f-sb {
-  justify-content: space-between;
-}
-
-.f-se {
-  justify-content: space-evenly;
-}
-
-.text {
-  font-family: 'Public Sans', sans-serif;
+#body {
+  max-width: 1400px;
+  margin: 0 auto;
 }
