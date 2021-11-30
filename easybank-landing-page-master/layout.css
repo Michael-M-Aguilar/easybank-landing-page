@@ -1,6 +1,10 @@
 #body {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
+}
+
+nav {
+  padding: 24px
 }
 
 .nav-width {
@@ -16,7 +20,7 @@
 }
 
 .article-images {
-  width: 270px;
+  width: 250px;
   height: 180px
 }
 
@@ -46,4 +50,12 @@
 
 .flex-column {
   flex-direction: column;
+}
+
+.logo-foot-width {
+  width: 90px;
+}
+
+.mu-bkg {
+  background-image: url(/easybank-landing-page-master/images/bg-intro-desktop.svg);
 }
