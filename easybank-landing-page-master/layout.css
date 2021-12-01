@@ -1,9 +1,9 @@
 #body {
-  max-width: 1600px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
-nav {
+.pad {
   padding: 24px
 }
 
@@ -17,6 +17,10 @@ nav {
 
 .section-1-width {
   width: 400px
+}
+
+.leverage-width {
+  width: 510px;
 }
 
 .article-images {
