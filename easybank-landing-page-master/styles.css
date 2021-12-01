@@ -71,3 +71,8 @@ a:hover {
   text-underline-offset: 0.5em;
   cursor: pointer;
 }
+
+.nav-logo {
+  width: 8.675rem;
+  height: 1.25rem;
+}

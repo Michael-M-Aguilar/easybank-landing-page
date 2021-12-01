@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="layout.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,19 +14,20 @@
 </head>
 <body id="body">
   <nav class="flex f-sb pad">
-    <img src="/easybank-landing-page-master/images/logo.svg" alt="logo"/>
+    <img src="/easybank-landing-page-master/images/logo.svg" alt="logo" class="nav-logo"/>
     <div class="flex f-se nav-width">
-      <div class="text-grey nav-sel">Home</div>
-      <div class="text-grey nav-sel">About</div>
-      <div class="text-grey nav-sel">Contact</div>
-      <div class="text-grey nav-sel">Blog</div>
-      <div class="text-grey nav-sel">Careers</div>
+      <div class="text-grey nav-sel hidden-in-mobile">Home</div>
+      <div class="text-grey nav-sel hidden-in-mobile">About</div>
+      <div class="text-grey nav-sel hidden-in-mobile">Contact</div>
+      <div class="text-grey nav-sel hidden-in-mobile">Blog</div>
+      <div class="text-grey nav-sel hidden-in-mobile">Careers</div>
     </div>
     <div>
-      <button class="text but">Request Invite</button>
+      <button class="text but hidden-in-mobile">Request Invite</button>
+      <img src="images/icon-hamburger.svg" alt="hamburger" class="hidden-in-desktop"/>
     </div>
   </nav>
-  <div id="section-1" class="flex f-sb light-white">
+  <div id="section-1" class="hidden-in-desktop flex">
     <div class="section-1-width ">
       <p class="text size-l">Next generation digital banking </p>
       <p class="text-grey">  Take your financial life online. Your Easybank account will be a one-stop-shop
