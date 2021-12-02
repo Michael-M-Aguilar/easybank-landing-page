@@ -6,6 +6,18 @@ body {
 a:hover {
   color:hsl(136, 65%, 51%);
   cursor: pointer;
+  transition: 150ms;
+}
+
+header {
+  display: flex;
+  width: 100vw;
+  padding: 1em;
+  background-color: hsl(0, 0%, 100%);
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
 }
 
 .lime {
@@ -92,6 +104,14 @@ a:hover {
 .hero-image {
   width: 88%;
   transform: translate(140px, 80px);
+}
+
+.margin-nav {
+  margin-top: 0.5em
+}
+
+.padding-nav {
+  padding-top:0.5em;
 }
 
 .padding-m {
