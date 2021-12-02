@@ -76,3 +76,14 @@ a:hover {
   width: 8.675rem;
   height: 1.25rem;
 }
+
+.header-menu {
+  text-decoration: none;
+  text-align: center;
+  width: calc(100% - 3rem);
+  padding: 0.6em;
+  margin: 0 auto;
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%); */
+}
