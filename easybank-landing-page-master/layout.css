@@ -1,5 +1,5 @@
-#body {
-  max-width: 1500px;
+body {
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -16,7 +16,8 @@
 }
 
 .section-1-width {
-  width: 400px
+  width: 400px;
+  padding:3em;
 }
 
 .leverage-width {
@@ -58,10 +59,13 @@
 
 .logo-foot-width {
   width: 90px;
+  color: #fff
 }
 
 .mu-bkg {
   background-image: url(/easybank-landing-page-master/images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -79,5 +83,8 @@
   }
     .flex {
     display: flex;
+  }
+  body {
+    width: 100vw;
   }
 }

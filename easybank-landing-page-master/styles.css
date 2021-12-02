@@ -30,6 +30,7 @@ a:hover {
 
 .size-m {
   font-size: 2rem;
+  font-weight: 400;
 }
 
 .size-l {
@@ -86,4 +87,21 @@ a:hover {
   /* position: absolute;
   left: 50%;
   transform: translateX(-50%); */
+}
+
+.hero-image {
+  width: 88%;
+  transform: translate(140px, 80px);
+}
+
+.padding-m {
+  padding: 3em;
+}
+
+.padding-t-m {
+  padding-top: 3em
+}
+
+.articles-width {
+  width: 250px
 }
