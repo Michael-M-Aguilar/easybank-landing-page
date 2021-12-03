@@ -15,14 +15,14 @@ body {
   width: 15%;
 }
 
-.s1-width {
+/* .s1-width {
   width: 70%;
   padding:3em;
-}
+} */
 
-.leverage-width {
+/* .leverage-width {
   width: 510px;
-}
+} */
 
 .article-images {
   width: 100%;
@@ -60,17 +60,6 @@ body {
 .logo-foot-width {
   width: 90px;
   color: #fff
-}
-
-.mu-bkg {
-  background-image: url(/easybank-landing-page-master/images/bg-intro-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: 50px;
-  background-position-y: -80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* @media screen and (min-width: 768px) {

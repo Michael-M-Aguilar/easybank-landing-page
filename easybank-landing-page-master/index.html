@@ -13,7 +13,9 @@
   <title>Frontend Mentor | Easybank landing page</title>
 </head>
 <body id="body">
-  <header>
+  <header class="header">
+    <div class="overlay unseen"></div>
+    <nav class="flex f-sb">
       <div>
         <img src="/easybank-landing-page-master/images/logo.svg" alt="logo" class="nav-logo margin-nav"/>
       </div>
@@ -28,8 +30,9 @@
 
       <div>
         <button class="text but hidden-in-mobile">Request Invite</button>
-        <button src="images/icon-hamburger.svg" alt="hamburger" class="hidden-in-desktop"></button>
+        <a id="hamburger"><img src="images/icon-hamburger.svg" alt="hamburger" class="hidden-in-desktop"/></a>
       </div>
+    </nav>
   </header>
 
   <main>
@@ -162,5 +165,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Michael</a>.
   </div>
+  <script src="/easybank-landing-page-master/script.js"></script>
 </body>
 </html>
