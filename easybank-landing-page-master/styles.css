@@ -179,7 +179,7 @@ header {
   transform: translateX(-50%); */
 }
 
-/* .margin-nav {
+.margin-nav {
   margin-top: 0.5em
 }
 
@@ -187,7 +187,7 @@ header {
   padding-top:0.5em;
 }
 
-.padding-m {
+/* .padding-m {
   padding: 3em;
 }
 
