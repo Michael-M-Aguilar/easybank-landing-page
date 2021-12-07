@@ -13,24 +13,64 @@ body {
 
 a:hover {
   color:hsl(136, 65%, 51%);
-  cursor: pointer;
   transition: ease-in-out 250ms;
-  text-decoration: none;
 }
 
+/* Menu for Desktop */
 header {
   z-index: 1;
   position: relative;
 }
 
-.nav li{
-  display: inline-block
+.nav-logo {
+  width: 8.675rem;
+  height: 1.25rem;
 }
 
-.nav li a {
+.header-pad {
+  padding: 1em 1.5em;
+}
+
+.header-nav {
+  padding-top: 0.5em;
+}
+
+.header-nav a {
   position: relative;
   margin-left: 20px;
   text-decoration: none;
+}
+
+.header-nav a:not(:last-child){
+  margin-right: 1.5em;
+}
+
+.nav-sel:hover {
+  text-decoration: underline;
+  text-decoration-color: hsl(136, 65%, 51%);
+  text-decoration-thickness: 0.2em;
+  text-underline-offset: 1.5em;
+  cursor: pointer;
+}
+m
+
+/* Menu for Mobile*/
+.header-menu a {
+  display: block;
+  padding: 0.625rem;
+  color: #2d314d;
+  text-align: center;
+}
+
+.header-menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
+  border-radius: 5px;
 }
 
 #section-1 {
@@ -51,23 +91,6 @@ header {
   bottom: 0px;
   left: 0px;
   background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
-}
-
-.header__menu {
-  position: absolute;
-  width: calc(100% - 3rem);
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  margin-top: 1.5rem;
-  padding: 1.625rem;
-  border-radius: 5px;
-}
-.header__menu a {
-  display: block;
-  padding: 0.625rem;
-  color: #2d314d;
-  text-align: center;
 }
 
 .seen{
@@ -170,30 +193,6 @@ header {
   cursor: pointer
 }
 
-.nav-sel:hover {
-  text-decoration: underline;
-  text-decoration-color: hsl(136, 65%, 51%);
-  text-decoration-thickness: 0.2em;
-  text-underline-offset: 0.5em;
-  cursor: pointer;
-}
-
-.nav-logo {
-  width: 8.675rem;
-  height: 1.25rem;
-}
-
-.header-menu {
-  text-decoration: none;
-  text-align: center;
-  width: calc(100% - 3rem);
-  padding: 0.6em;
-  margin: 0 auto;
-  /* position: absolute;
-  left: 50%;
-  transform: translateX(-50%); */
-}
-
 .margin-nav {
   margin-top: 0.5em
 }
@@ -201,15 +200,3 @@ header {
 .padding-nav {
   padding-top:0.5em;
 }
-
-/* .padding-m {
-  padding: 3em;
-}
-
-.padding-t-m {
-  padding-top: 3em
-} */
-
-/* .articles-width {
-  width: 250px
-} */
