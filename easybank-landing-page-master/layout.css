@@ -62,7 +62,7 @@ body {
   color: #fff
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hidden-in-desktop {
     display: none;
   }
@@ -72,7 +72,13 @@ body {
   .hidden-in-mobile {
     display: none;
   }
-  body {
-    width: 100vw;
-  }
-} */
+  .seen{
+  visibility: visible;
+  opacity: 1
+}
+
+.unseen {
+  visibility: hidden;
+  opacity: 0;
+}
+}

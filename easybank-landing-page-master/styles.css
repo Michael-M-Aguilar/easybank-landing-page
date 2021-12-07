@@ -19,10 +19,8 @@ a:hover {
 }
 
 header {
-  background-color: hsl(0, 0%, 100%);
-  padding: 5px 50px;
-  /* width: 100vw; */
-  z-index: 2;
+  z-index: 1;
+  position: relative;
 }
 
 .nav li{
@@ -53,6 +51,23 @@ header {
   bottom: 0px;
   left: 0px;
   background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
+}
+
+.header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
+  border-radius: 5px;
+}
+.header__menu a {
+  display: block;
+  padding: 0.625rem;
+  color: #2d314d;
+  text-align: center;
 }
 
 .seen{

@@ -15,28 +15,29 @@
 <body id="body">
   <header class="header">
     <div class="overlay unseen"></div>
-    <nav class="flex f-sb">
-      <div>
-        <img src="/easybank-landing-page-master/images/logo.svg" alt="logo" class="nav-logo margin-nav"/>
-      </div>
+    <nav class="flex f-sb align-i-c">
+        <a>
+          <img src="/easybank-landing-page-master/images/logo.svg" alt="logo" class="nav-logo margin-nav"/>
+        </a>
 
-      <ul class="flex f-se nav-width padding-nav nav">
-        <li><a href="#" class="text-grey nav-sel">Home</a></li>
-        <li><a href="#" class="text-grey nav-sel">About</a></li>
-        <li><a href="#" class="text-grey nav-sel">Contact</a></li>
-        <li><a href="#" class="text-grey nav-sel">Blog</a></li>
-        <li><a href="#" class="text-grey nav-sel">Careers</a></li>
-      </ul>
+      <!-- <div class="flex f-se nav"> -->
+      <div class="header-nav hidden-in-mobile">
+        <a href="#" class="text-grey nav-sel">Home</a>
+        <a href="#" class="text-grey nav-sel">About</a>
+        <a href="#" class="text-grey nav-sel">Contact</a>
+        <a href="#" class="text-grey nav-sel">Blog</a>
+        <a href="#" class="text-grey nav-sel">Careers</a>
+      </div>
 
       <div>
         <button class="text but hidden-in-mobile">Request Invite</button>
         <a id="hamburger"><img src="images/icon-hamburger.svg" alt="hamburger" class="hidden-in-desktop"/></a>
-        <a id="close"><img src="images/icon-close.svg" alt="close" class="hidden-in-desktop"/></a>
+        <a id="close" class="unseen"><img src="images/icon-close.svg" alt="close" class="hidden-in-desktop"/></a>
       </div>
     </nav>
   </header>
 
-  <main>
+  <!-- <main>
     <section id="section-1" class="flex light-grey">
       <div class="s1-width hero">
         <p class="text size-l">Next generation digital banking </p>
@@ -165,7 +166,7 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Michael</a>.
-  </div>
+  </div> -->
   <script src="/easybank-landing-page-master/script.js"></script>
 </body>
 </html>

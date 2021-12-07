@@ -10,6 +10,7 @@ $hamburger.addEventListener('click', function() {
     $header.classList.remove('open')
     $overlay.classList.add("unseen");
     $overlay.classList.remove("seen");
+    $close.classList.remove("unseen")
     $close.classList.add('seen');
   }
   else {
