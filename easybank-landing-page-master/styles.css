@@ -45,14 +45,17 @@ header {
   margin-right: 1.5em;
 }
 
-.nav-sel:hover {
+.m-sel {
+  text-decoration: none;
+}
+
+.sel:hover {
   text-decoration: underline;
   text-decoration-color: hsl(136, 65%, 51%);
   text-decoration-thickness: 0.2em;
   text-underline-offset: 1.5em;
   cursor: pointer;
 }
-m
 
 /* Menu for Mobile*/
 .header-menu a {
@@ -71,6 +74,7 @@ m
   margin-top: 1.5rem;
   padding: 1.625rem;
   border-radius: 5px;
+  z-index: 2;
 }
 
 #section-1 {
@@ -104,19 +108,24 @@ m
 }
 
 .mu-bkg {
-  background: url(/easybank-landing-page-master/images/bg-intro-desktop.svg);
-  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(/easybank-landing-page-master/images/bg-intro-mobile.svg);
+  min-height: 17.5rem;
   background-size: cover;
-  background-position-x: 50px;
-  background-position-y: -80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.hero-image {
-  width: 80%;
-  transform: translate(140px,-50px);
+.mu-bkg::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url(/easybank-landing-page-master/images/image-mockups.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom ;
+  margin: 0 auto;
 }
 
 .hero {

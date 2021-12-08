@@ -3,6 +3,7 @@ const $close = document.querySelector("#close");
 const $body = document.querySelector('#body');
 const $header = document.querySelector('.header');
 const $overlay = document.querySelector('.overlay');
+const $menu = document.querySelector('#menu');
 
 $hamburger.addEventListener('click', function() {
   if($header.classList.contains('open')) {
@@ -20,6 +21,8 @@ $hamburger.addEventListener('click', function() {
     $overlay.classList.add("seen");
     $close.classList.remove('unseen')
     $hamburger.classList.add("unseen");
+    $menu.classList.remove("unseen");
+    $menu.classList.add("seen");
   }
 });
 
@@ -31,4 +34,6 @@ $close.addEventListener('click', function() {
   $overlay.classList.remove('seen');
   $overlay.classList.add('unseen');
   $header.classList.remove('open')
+  $menu.classList.remove("seen");
+  $menu.classList.add("unseen");
 })
