@@ -16,6 +16,23 @@ a:hover {
   transition: ease-in-out 250ms;
 }
 
+h1 {
+  line-height: 1.2;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0.8em
+}
+
+h1, h2, h3 {
+  margin-top: 0
+}
+
+p {
+  line-height: 1.5;
+  text-align: center;
+}
+
 /* Menu for Desktop */
 header {
   z-index: 1;
@@ -116,28 +133,21 @@ header {
   min-height: 17.5rem;
 }
 
-.mock-up {
-  max-height: 26rem;
-  position: absolute;
-  left: 50%;
-  top: -30%;
-  z-index: -1;
-  transform: translateX(-50%);
-}
-
 .mu-bkg::before {
   content: "";
-  height: 300px;
-  width: 500px;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  position: absolute;
   background-image: url(/easybank-landing-page-master/images/image-mockups.png);
-  background-size: cover;
+  background-size: 86%;
+  /* Can also use this instead of bkg-size
+  left: 50%;
+  transform: translateX(-50%); */
   background-repeat: no-repeat;
   background-position: center bottom ;
-  margin: 0 auto;
 }
 
-.mu-bkg::after {
+/* .mu-bkg::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -146,7 +156,7 @@ header {
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
-}
+} */
 
 @media (min-width: 40em) {
   .mu-bkg::after {
@@ -228,18 +238,11 @@ header {
   font-weight: 400;
 }
 
-.size-l {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-
 .text-white {
-  font-family: 'Public Sans', sans-serif;
   color: hsl(0, 0%, 100%);
 }
 
 .text-grey {
-  font-family: 'Public Sans', sans-serif;
   color: hsl(233, 8%, 62%);
   font-size: 0.9rem;
   font-weight: 300;
