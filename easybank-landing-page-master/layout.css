@@ -49,6 +49,10 @@ body {
   justify-content: flex-start;
 }
 
+.ai-center {
+  align-items: center;
+}
+
 .jc-center {
   justify-content: center;
 }
@@ -72,13 +76,4 @@ body {
   .hidden-in-mobile {
     display: none;
   }
-  .seen{
-  visibility: visible;
-  opacity: 1
-}
-
-.unseen {
-  visibility: hidden;
-  opacity: 0;
-}
 }
