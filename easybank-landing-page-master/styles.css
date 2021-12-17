@@ -11,6 +11,11 @@ body {
   overflow: hidden;
 }
 
+.container {
+  max-width: 69rem;
+  margin: 0 auto;
+}
+
 a:hover {
   color:hsl(136, 65%, 51%);
   transition: ease-in-out 250ms;
@@ -112,8 +117,20 @@ header {
   visibility: hidden;
   opacity: 0;
 }
+
+.hero {
+  background-color: hsl(0, 0%, 98%);
+}
+
+@media (min-width: 64em) {
+  .hero .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
 /* Background for Mobile Hero */
-.mu-bkg {
+.hero-img {
   position: relative;
   background-image: url(/easybank-landing-page-master/images/bg-intro-mobile.svg);
   background-size: cover;
@@ -122,90 +139,24 @@ header {
   min-height: 17.5rem;
 }
 
-@media screen and (min-width: 54em){
-  #hero {
-    display: flex
+@media (min-width: 40em) {
+  .hero-img {
+    min-height: 25rem;
+    background-position: center 70%;
   }
+}
 
-  .mu-bkg {
+@media (min-width: 64em) {
+  .hero-img {
     flex: 3;
     order: 2;
     height: 41rem;
     background-image: none;
   }
-
-  .mu-bkg::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    background-image: url("/easybank-landing-page-master/images/bg-intro-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    width: 100%;
-    background-size: 122%;
-    background-position: 0% 83%;
-  }
-  .mu-bkg::after {
-    width: 120%;
-    height: 122%;
-    background-size: 94%;
-    background-position: center 200%;
-    left: 22%
-  }
-
-  .hero-text {
-    flex: 2;
-    order: 1;
-    text-align: left;
-  }
-
-  .mu-bkg::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("/easybank-landing-page-master/images/image-mockups.png");
-    background-size: 93%;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-  }
 }
 
-.mu-bkg::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-image: url(/easybank-landing-page-master/images/image-mockups.png);
-  background-size: 86%;
-  /* Can also use this instead of bkg-size
-  left: 50%;
-  transform: translateX(-50%); */
-  background-repeat: no-repeat;
-  background-position: center bottom ;
-}
-
-.hero-text {
-  text-align: center;
-}
-
-.container {
-  max-width: 69rem;
-  margin: 0 auto;
-  padding-top: 2.5rem;
-  padding-right:1.5rem;
-  padding-bottom:2.5rem;
-  padding-left: 1.5rem;
-}
-
-@media (min-width: 40em) {
-  .mu-bkg::after {
-    background-size: 52%;
-  }
-}
-@media (min-width: 54em) {
-  /* Background for Hero Desktop */
-  .mu-bkg::before {
+@media (min-width: 64em) {
+  .hero-img::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -216,8 +167,27 @@ header {
     background-size: 122%;
     background-position: 0% 83%;
   }
+}
 
-  .mu-bkg::after {
+.hero-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(/easybank-landing-page-master/images/image-mockups.png);
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom ;
+}
+
+@media (min-width: 40em) {
+  .hero-img::after {
+    background-size: 52%;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero-img::after {
     width: 120%;
     height: 122%;
     background-size: 94%;
@@ -225,19 +195,16 @@ header {
     left: 22%;
   }
 }
-
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  transform: translate(40%, -40%);
+.hero-text {
+  text-align: center;
 }
 
-.s2-1 {
-  position: block;
-  padding-bottom: 20px;
-  width: 45vw;
+@media (min-width: 64em) {
+  .hero-text {
+    flex: 2;
+    order: 1;
+    text-align: left;
+  }
 }
 
 .lime {
@@ -250,10 +217,6 @@ header {
 
 .grey-blue {
   background-color: hsl(220, 16%, 96%)
-}
-
-.light-grey {
-  background-color: hsl(0, 0%, 98%);
 }
 
 .white-bkg {
@@ -292,12 +255,4 @@ header {
   font-weight: 400;
   color: white;
   cursor: pointer
-}
-
-.margin-nav {
-  margin-top: 0.5em
-}
-
-.padding-nav {
-  padding-top:0.5em;
 }
