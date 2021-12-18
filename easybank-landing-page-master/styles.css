@@ -239,6 +239,46 @@ header {
   gap:1.875rem;
 }
 
+.feat-title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.15;
+  color:hsl(233, 26%, 24%);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 40em) {
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features {
+    text-align: left;
+  }
+  .item {
+    flex: flex 0 0 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .item {
+    flex: 1
+  }
+  .icon {
+    margin-bottom: 2.2rem;
+  }
+  .feat-title {
+    margin-bottom: 1rem;
+  }
+  .feature-intro {
+    width: 60%;
+  }
+}
+
+
+
 .lime {
   background-color: hsl(136, 65%, 51%);
 }
