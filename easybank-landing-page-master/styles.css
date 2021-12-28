@@ -306,6 +306,13 @@ header {
 
 
 
+
+/* Articles Section */
+
+.article-images {
+  width: 60%;
+}
+
 .lime {
   background-color: hsl(136, 65%, 51%);
 }
