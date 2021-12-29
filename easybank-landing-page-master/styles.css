@@ -309,24 +309,36 @@ header {
 
 /* Articles Section */
 
-.article-images {
-  width: 60%;
+.currency-image {
+  background-image: url('/easybank-landing-page-master/images/image-currency.jpg');
 }
+
+.rest-image {
+  background-image: url('/easybank-landing-page-master/images/image-restaurant.jpg');
+}
+
+.article-images {
+  height: 12rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.article {
+  background-color: hsl(0, 0%, 98%)
+}
+
+.article-item {
+  background-color: hsl(0, 0%, 100%)
+}
+
+
+
+
+
 
 .lime {
   background-color: hsl(136, 65%, 51%);
-}
-
-.light-white {
-  background-color: (0, 0%, 98%)
-}
-
-.white-bkg {
-  background-color: hsl(0, 0%, 100%);
-}
-
-.size {
-  font-size: 1.5rem;
 }
 
 .size-m {
