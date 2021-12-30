@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-a:hover {
+.article-title:hover {
   color:hsl(136, 65%, 51%);
   transition: ease-in-out 250ms;
 }
@@ -308,13 +308,16 @@ header {
 
 
 /* Articles Section */
-
-.currency-image {
-  background-image: url('/easybank-landing-page-master/images/image-currency.jpg');
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:1.875rem;
 }
 
-.rest-image {
-  background-image: url('/easybank-landing-page-master/images/image-restaurant.jpg');
+.article-padding {
+  padding-top: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .article-images {
@@ -332,10 +335,38 @@ header {
   background-color: hsl(0, 0%, 100%)
 }
 
+.article-author {
+  font-size: 0.7rem;
+}
 
+.article-title {
+  font-size: 1.1rem;
+}
 
+.article-descrip {
+  font-size: 0.875rem;
+}
 
+@media (min-width: 40em) {
+  .article-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .article-item:hover {
+  transform: scale(1.05);
+}
+
+}
+
+@media (min-width:64em) {
+  .article-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .article-item:hover {
+  transform: scale(1.05);
+}
+}
 
 .lime {
   background-color: hsl(136, 65%, 51%);
@@ -352,7 +383,6 @@ header {
 
 .text-grey {
   color: hsl(233, 8%, 62%);
-  font-size: 0.9rem;
   font-weight: 300;
 }
 
