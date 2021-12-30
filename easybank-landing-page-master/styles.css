@@ -234,6 +234,12 @@ header {
   text-align: center;
 }
 
+.feature-header {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
 .feat-title {
   font-size: 1.5rem;
   font-weight: 300;
@@ -266,6 +272,7 @@ header {
 }
 
 .icon {
+  padding-top: 3rem;
   margin-bottom: 1.8rem;
 }
 
@@ -326,6 +333,12 @@ header {
   padding-right: 1rem;
 }
 
+.article-header {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
 .article-images {
   height: 12rem;
   background-size: cover;
@@ -361,6 +374,10 @@ header {
   .article-item:hover {
   transform: scale(1.05);
   }
+
+  .article-header {
+    text-align: left;
+  }
 }
 
 @media (min-width:64em) {
@@ -370,6 +387,10 @@ header {
 
   .article-item:hover {
   transform: scale(1.05);
+  }
+
+  .article-header {
+    text-align: left;
   }
 }
 
@@ -388,6 +409,22 @@ header {
   text-decoration: none;
   font-weight: 100;
   font-size: 0.95rem;
+  padding-top: 1rem;
+}
+
+#footer .footer-contact {
+  padding-top: 1.8rem;
+  padding-bottom: 0.8rem;
+}
+
+#footer .footer-social {
+  padding-top: 2rem;
+  padding-left: 0.3rem;
+  padding-right: 0.35rem;
+}
+
+#footer .but {
+  margin-bottom: 1rem;
 }
 
 .footer-grid {
@@ -403,8 +440,19 @@ header {
 }
 
 @media (min-width: 40em) {
-  .footer-links a{
+  .footer-links a {
   transition: 400ms ease-in-out;
+  }
+}
+
+@media (min-width: 64em) {
+  #footer .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    gap: 1rem;
+    justify-items: start;
   }
 }
 
@@ -414,13 +462,18 @@ header {
 
 .copyright {
   font-size: 0.8rem;
+  color: hsl(233, 8%, 62%);
+}
+
+.footer-bottom, .footer-top {
+  margin-top: 2rem;
+}
+
+.footer-bottom {
+  margin-bottom: 4rem;
 }
 
 
-.size-m {
-  font-size: 2rem;
-  font-weight: 400;
-}
 
 .text-grey {
   color: hsl(233, 8%, 62%);
