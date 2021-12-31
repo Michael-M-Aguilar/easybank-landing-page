@@ -46,6 +46,7 @@ header {
 .nav-logo {
   width: 8.675rem;
   height: 1.25rem;
+  margin-top: 0.7rem;
 }
 
 .header-pad {
@@ -67,6 +68,11 @@ header {
   .padding-all {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: left;
   }
 }
 
@@ -290,6 +296,9 @@ header {
     flex: flex 0 0 50%;
     padding-top: 2rem;
   }
+  .feature-header {
+  text-align: left;
+  }
 }
 
 @media (min-width: 64em) {
@@ -315,6 +324,9 @@ header {
   .feat-description {
     padding-top: 1.3rem;
   }
+  .feature-header {
+  text-align: left;
+  }
 }
 
 
@@ -328,7 +340,6 @@ header {
 }
 
 .article-padding {
-  padding-top: 0.6rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -413,20 +424,22 @@ header {
 }
 
 #footer .footer-social {
-  padding-top: 2rem;
-  padding-left: 0.3rem;
-  padding-right: 0.35rem;
+  padding: 1.2rem 0.3rem 0.8rem 0.3rem
 }
 
 #footer .footer-button {
   margin-bottom: 1.5rem;
-  margin-top: 2rem
+  margin-top: 2.5rem
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap:1.875rem;
+}
+
+.footer-logo {
+  padding-top: 3rem
 }
 
 .footer-links {
@@ -444,14 +457,6 @@ header {
   color: hsl(233, 8%, 62%);
 }
 
-/* .footer-button, .footer-social {
-  margin-top: 2rem;
-}
-
-.footer-button {
-  margin-bottom: 4rem;
-} */
-
 @media (min-width: 40em) {
   .footer-links a {
   transition: 400ms ease-in-out;
@@ -459,6 +464,12 @@ header {
 }
 
 @media (min-width: 64em) {
+  #footer .footer-social {
+    padding-top: 0.15rem;
+    padding-left: 0.3rem;
+    padding-right: 1.35rem;
+  }
+
   #footer .container {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 3fr;
@@ -468,34 +479,47 @@ header {
     justify-items: start;
   }
 
+  #footer .footer-button {
+    margin-top: 5rem
+  }
+
   .footer-links.col1 {
-    grid-area: links1
+    grid-area: links1;
+    margin-bottom: 0.7rem;
   }
 
   .footer-links.col2 {
     grid-area: links2;
+    margin-bottom: 0.7rem;
   }
 
   .footer-logo {
     grid-area: logo;
+    margin-top: 0.2rem;
   }
 
   .footer-button {
     grid-area: cta;
+    text-align: right;
+    justify-self: end;
   }
 
   .footer-social {
     grid-area: social;
-    align-self: end;
   }
 
   .footer-copyright {
     grid-area: copyright;
     align-self: end;
     justify-self: end;
+    margin-bottom: 3rem;
+  }
+
+  .footer-links {
+    justify-content: center;
+    align-items: start;
   }
 }
-
 
 
 
@@ -512,5 +536,6 @@ header {
   border: 0;
   font-weight: 400;
   color: white;
-  cursor: pointer
+  cursor: pointer;
+  /* margin-top: 1rem; */
 }
