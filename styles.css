@@ -138,6 +138,10 @@ header {
   opacity: 0;
 }
 
+#hamburger, #close {
+  position: absolute;
+  right: 15px;
+}
 
 
 
